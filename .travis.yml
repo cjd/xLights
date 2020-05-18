@@ -11,7 +11,7 @@ after_success:
   - docker cp buildvm:/xLights/xLights/AppImage/ /tmp/
   - ls -lh /tmp/* ./*
   - wget -c https://github.com/probonopd/uploadtool/raw/master/upload.sh
-  - bash upload.sh /tmp/AppImage/*.Appimage
+  - bash upload.sh /tmp/AppImage/*.AppImage
 env:
   global:
     - MAKEFLAGS="-j 2"
