@@ -4,6 +4,9 @@ services:
   - docker
 git:
   depth: 3
+arch:
+  - amd64
+  - arm64
 script:
   - docker pull debenham/xlights
   - docker run --name buildvm debenham/xlights /bin/bash Recipe.appimage
